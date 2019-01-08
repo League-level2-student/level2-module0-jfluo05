@@ -32,14 +32,14 @@ public class _00_ArrayCheatSheet {
 			 ages[i] =r.nextInt(10000)+1;
 		}
 		//8. without printing the entire array, print only the smallest number in the array
-		smallestNum=10003;
+		smallestNum=10000;
 		for(int i= 0; i<ages.length; i++) {
 			System.out.println(ages[i]);
 			if(smallestNum>ages[i]) {
 			smallestNum=ages[i];
 			}
 		}
-		System.out.println("smallest= "+smallestNum);
+		
 		
 		//9 print the entire array to see if step 8 was correct
 		
@@ -52,5 +52,7 @@ public class _00_ArrayCheatSheet {
 				largestNum=ages[i];
 			}
 		}
+		System.out.println("smallest number= "+smallestNum);
+		System.out.println("largest number= "+largestNum);
 	}
 }
